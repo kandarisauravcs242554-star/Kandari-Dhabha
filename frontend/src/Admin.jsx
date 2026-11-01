@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react";
 import "./Admin.css";
 
-const API = "http://localhost:5000/api/orders";
-const LOGIN_API = "http://localhost:5000/api/admin/login";
+const API = "https://kandari-dhabha.onrender.com/api/orders";
+const LOGIN_API = "https://kandari-dhabha.onrender.com/api/admin/login";
 
 const statuses = [
   "Placed",

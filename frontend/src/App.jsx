@@ -70,7 +70,7 @@ function RestaurantApp() {
 
       try {
 
-        const response = await fetch("http://localhost:5000/api/menu");
+        const response = await fetch("https://kandari-dhabha.onrender.com/api/menu");
 
         const result = await response.json();
 
@@ -266,7 +266,7 @@ function RestaurantApp() {
 
     try {
 
-      const response = await fetch("http://localhost:5000/api/orders", {
+      const response = await fetch("https://kandari-dhabha.onrender.com/api/orders", {
 
         method: "POST",
 
@@ -369,7 +369,7 @@ function RestaurantApp() {
 
     setTrackingLoading(true);
     try {
-      const response = await fetch(`http://localhost:5000/api/orders/track/${id}`);
+      const response = await fetch(`https://kandari-dhabha.onrender.com/api/orders/track/${id}`);
       const result = await response.json();
       if (!response.ok || !result.success) {
         throw new Error(result.message || "Order not found.");
